@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Security System</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- inject:css-->
+
+    <link rel="stylesheet" href="css/plugin.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- endinject -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="https://voags.com/assets/imgs/home1/logo.webp">
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search">
+        <form class="search-form">
+            <span data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="img/svg/bars.svg" alt="img"></a>
+                <a class="navbar-brand" href="#"><img class="dark" src="https://voags.com/Media/website.png" alt="svg"><img class="light" src="img/website-1.png" alt="img"></a>
+                <form action="https://demo.jsnorm.com/" class="search-form">
+                    <span data-feather="search"></span>
+                    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                </form>
+              
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <li class="nav-search d-none">
+                        <a href="#" class="search-toggle">
+                            <i class="la la-search"></i>
+                            <i class="la la-times"></i>
+                        </a>
+                        <form action="https://demo.jsnorm.com/" class="search-form-topMenu">
+                            <span class="search-icon" data-feather="search"></span>
+                            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                        </form>
+                    </li>
+                    
+                    <!-- ends: nav-message -->
+                    <li class="nav-notification">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle">
+                                <span data-feather="bell"></span></a>
+                            <div class="dropdown-wrapper">
+                                <h2 class="dropdown-wrapper__title">Notifications <span class="badge-circle badge-warning ml-1">4</span></h2>
+                                <ul>
+                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--primary">
+                                            <span data-feather="inbox"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--secondary">
+                                            <span data-feather="upload"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--success">
+                                            <span data-feather="log-in"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--info">
+                                            <span data-feather="at-sign"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--danger">
+                                            <span data-feather="heart"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="dropdown-wrapper__more">See all incoming activity</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                   
+                    <!-- ends: .nav-support -->
+                    <li class="nav-flag-select">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/flag.png" alt="" class="rounded-circle"></a>
+                            <div class="dropdown-wrapper dropdown-wrapper--small">
+                                <a href="#"><img src="img/eng.png" alt=""> English</a>
+                                <a href="#"><img src="img/ger.png" alt=""> German</a>
+                                <a href="#"><img src="img/spa.png" alt=""> Spanish</a>
+                                <a href="#"><img src="img/tur.png" alt=""> Turkish</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ends: .nav-flag-select -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/author-nav.jpg" alt="" class="rounded-circle"></a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        <img src="img/author-nav.jpg" alt="" class="rounded-circle">
+                                    </div>
+                                    <div>
+                                        <h6>John Doe</h6>
+                                        <span>Owner</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                   
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends: .nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span>Main Pages</span>
+                        </li>
+                        <li class="has-child open">
+                            <a href="#" class="">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span onclick="window.location='dashboard.html'" class="menu-text">Dashboard</span>
+                             
+                            </a>
+                            
+                        </li>
+
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="user" class="nav-icon"></span>
+                                <span class="menu-text">Personnel Management</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 128px; left: 214px;">
+                                <li>
+                                    <a class="" href="employees.html">Employees</a>
+                                </li>
+                                <li>
+                                    <a class="" href="ai-document-scanner.html">AI Document Scanner</a>
+                                </li>
+                                <li>
+                                    <a class="" href="digital-signatures.html">Digital Signatures</a>
+                                </li>
+                                <li>
+                                    <a class="" href="document-reminders.html">Document Reminders</a>
+                                </li>
+                                <li>
+                                    <a class="" href="access-control.html">Access Control</a>
+                                </li>
+                                
+                              
+                            </ul>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="clipboard" class="nav-icon"></span>
+                                <span class="menu-text">Reporting & Protocols</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 128px; left: 214px;">
+                                <li>
+                                    <a class="" href="security-reports.html">Security Reports</a>
+                                </li>
+                                <li>
+                                    <a class="" href="auto-correction.html">Suggestion & Correction</a>
+                                </li>
+                                <li>
+                                    <a class="" href="theft&tracking-logs.html">Theft & Tracking Logs</a>
+                                </li>
+                                <li>
+                                    <a class="" href="integration_subcontract&personal-records.html">Subcontractor & Personnel </a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                            
+                        </li>
+                        <li class="has-child open ">
+                            <a href="active">
+                                <span data-feather="crosshair" class="nav-icon"></span>
+                                <span class="menu-text">Scheduling & Tracking</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 128px; left: 214px;">
+                                <li>
+                                    <a class="active" href="online-booking.html">Appointment Booking</a>
+                                </li>
+                                <li>
+                                    <a class="" href="checkin-checkout.html">Checkin & Checkout</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="has-child open">
+                            <a href="digital-registration&contract-management.html">
+                                <span data-feather="package" class="nav-icon"></span>
+                                <span  onclick="window.location='digital-registration&contract-management.html'" class="menu-text">Subcontractors</span>
+                             
+                            </a>
+                            
+                        </li>
+                        <li class="has-child open">
+                            <a href="duty-instructions.html">
+                                <span data-feather="briefcase" class="nav-icon"></span>
+                                <span onclick="window.location='duty-instructions.html'" class="menu-text">Duty Instructions</span>
+                             
+                            </a>
+                            
+                        </li>
+                        <li class="has-child open">
+                            <a href="media-uploads.html">
+                                <span data-feather="upload-cloud" class="nav-icon"></span>
+                                <span onclick="window.location='media-uploads.html'" class="menu-text">Media Uploads</span>
+                             
+                            </a>
+                            
+                        </li>
+                       
+
+                  
+
+
+
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-breadcrumb">
+
+                            <div class="breadcrumb-main add-contact justify-content-sm-between ">
+                                <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                                    <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
+                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Appointment Booking</h4>
+                                        <span class="sub-title ml-sm-25 pl-sm-25"></span>
+                                        <div class="message-wrapper">
+
+                                        </div>
+                                    </div>
+
+                                    <form action="https://demo.jsnorm.com/" class="d-flex align-items-center add-contact__form my-sm-0 my-2">
+                                        <span data-feather="search"></span>
+                                        <input class="form-control mr-sm-2 border-0 box-shadow-none" type="search" placeholder="Search by Name" aria-label="Search">
+                                    </form>
+
+                                </div>
+                                <div class="action-btn">
+                                    <a href="#" class="btn px-15 btn-primary" data-toggle="modal" data-target="#add-contact">
+                                        <i class="las la-plus fs-16"></i>Add Appointment
+                                    </a>
+                                    <div class="modal-info-delete modal fade" id="modal-info-delete" tabindex="-1" role="dialog">
+                                        <div class="modal-dialog modal-sm modal-info" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <div class="modal-info-body d-flex">
+                                                        <div class="modal-info-icon warning">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="modal-info-text">
+                                                            <h6>Do you want to delete this appointment?</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger btn-outlined btn-sm" data-dismiss="modal">No</button>
+                                                    <button type="button" class="btn btn-success btn-outlined btn-sm" data-dismiss="modal">Yes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade add-contact" id="add-contact" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content radius-xl">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title fw-500" id="staticBackdropLabel">Add Appointment</h6>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span data-feather="x"></span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="add-new-contact">
+                                                        <form action="online-booking.html">
+                                                            <div class="form-group mb-20">
+                                                                <label>Name:</label>
+                                                                <input type="text" class="form-control form-control-lg" placeholder="Your Name">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Email Address:</label>
+                                                                <input type="text" class="form-control form-control-lg" placeholder="Email Address">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Phone Number:</label>
+                                                                <input type="text" class="form-control form-control-lg" placeholder="Phone Number">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Appointment Date:</label>
+                                                                <input type="date" class="form-control form-control-lg">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Appointment Time:</label>
+                                                                <input type="time" class="form-control form-control-lg" >
+                                                            </div>
+
+                                                            <div class="button-group d-flex pt-20">
+
+
+
+                                                                <button class="btn btn-primary btn-default btn-squared ">add new appointment
+                                                                </button>
+
+
+
+
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade edit-contact" id="edit-contact" role="dialog" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content radius-xl">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title fw-500" id="staticBackdropLabel">Edit Appointment Booking</h6>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span data-feather="x"></span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="edit-new-contact">
+                                                        <form action="online-booking.html">
+                                                            <div class="form-group mb-20">
+                                                                <label>Name:</label>
+                                                                <input type="text" class="form-control form-control-lg" value="Johnny">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Email Address:</label>
+                                                                <input type="text" class="form-control form-control-lg" value="Johnny@yahoo.com">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Phone Number:</label>
+                                                                <input type="text" class="form-control form-control-lg" value="+1 (861) 550-2796">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Appointment Date:</label>
+                                                                <input type="date" class="form-control form-control-lg">
+                                                            </div>
+                                                            <div class="form-group mb-20">
+                                                                <label>Appointment Time:</label>
+                                                                <input type="time" class="form-control form-control-lg" >
+                                                            </div>
+
+                                                            <div class="button-group d-flex pt-20">
+
+
+
+                                                                <button class="btn btn-primary btn-default btn-squared ">Save Changes
+                                                                </button>
+
+
+
+
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-list-wrap mb-25">
+                            <div class="contact-list bg-white radius-xl w-100">
+                                <div class="table-responsive">
+
+                                    <table class="table mb-0 table-borderless table-rounded">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="custom-checkbox  check-all">
+                                                            <input class="checkbox" type="checkbox" id="check-3">
+                                                            <label for="check-3">
+                                                                <span class="checkbox-text userDatatable-title">Name</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <th class="c-email">
+                                                    <span>emaill</span>
+                                                </th>
+                                                <th class="c-company">
+                                                    <span>date</span>
+                                                </th>
+                                                <th class="c-position">
+                                                    <span class="">time</span>
+                                                </th>
+                                                <th class="c-phone">
+                                                    <span class="">Phone</span>
+                                                </th>
+                                                <th class="c-status">
+                                                    <span class="">Status</span>
+                                                </th>
+                                                <th class="c-action">
+                                                    <span class="float-right"></span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                    
+
+                                            <tr>
+                                                <td>
+                                                    <div class="contact-item d-flex align-items-center">
+                                                        <div class="contact-personal-wrap">
+                                                            <div class="checkbox-group-wrapper">
+                                                                <div class="checkbox-group d-flex">
+                                                                    <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                        <input class="checkbox" type="checkbox" id="check-grp-c-8">
+                                                                        <label for="check-grp-c-8"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contact-personal-info d-flex">
+                                                            
+                                                            <div class="contact_title">
+                                                                <h6>
+                                                                    <a href="#">Johnny</a>
+                                                                </h6>
+                                                                <span class="location">USA</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="email">Johnny@yahoo.com</span>
+                                                </td>
+                                                <td>
+                                                    <span class="com-name">4 July 2025</span>
+                                                </td>
+                                                <td>
+                                                    <span class="position">12:00 AM</span>
+                                                </td>
+                                                <td>
+                                                    <span class="email">+1 (861) 550-2796</span>
+                                                </td>
+                                                <td>
+                                                    <div class="userDatatable-content d-inline-block">
+                                                        <span class="bg-opacity-success  color-success rounded-pill userDatatable-content-status active">active</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                                       
+                                                        <li>
+                                                            <a data-toggle="modal" href="#" data-target="#edit-contact" class="edit">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="remove" data-toggle="modal" data-target="#modal-info-delete">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                                                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ends: col-12 -->
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+       
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+    <div class="overlay-dark-sidebar"></div>
+    <div class="customizer-overlay"></div>
+
+    <a href="#" class="customizer-trigger">
+        <span data-feather="settings"></span></a>
+        <div class="customizer-wrapper">
+            <div class="customizer">
+                <div class="customizer__head">
+                    <h4 class="customizer__title">Setting</h4>
+                    <span class="customizer__sub-title">Customize your dashboard theme</span>
+                    <a href="#" class="customizer-close">
+                        <span data-feather="x"></span></a>
+                </div>
+                <div class="customizer__body">
+              
+                    <!-- ends: .customizer__single -->
+    
+                    <div class="customizer__single">
+                        <h4>Theme</h4>
+                        <ul class="customizer-list d-flex l_sidebar">
+                            <li class="customizer-list__item">
+                                <a href="#" data-layout="light" class="active">
+                                    <img src="img/light.png" alt="">
+                                    <i class="fa fa-check-circle"></i>
+                                </a>
+                            </li>
+                            <li class="customizer-list__item">
+                                <a href="#" data-layout="dark">
+                                    <img src="img/dark.png" alt="">
+                                    <i class="fa fa-check-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ends: .customizer__single -->
+    
+                 
+                    <!-- ends: .customizer__single -->
+                </div>
+            </div>
+        </div>
+    
+
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDduF2tLXicDEPDMAtC6-NLOekX0A5vlnY"></script>
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <!-- endinject-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("recordForm");
+          
+        
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                document.querySelector('.message-wrapper').innerHTML=`<div class="atbd-pop-message message-success message-5">
+    <span class="atbd-pop-message__icon">
+        <i class="la la-check-circle"></i>
+    </span>
+    <span class="atbd-pop-message__text"><p>Your entered data has been successfully added to our system.</p></span>
+
+</div>`;
+setTimeout(() => {
+    document.querySelector('.message-wrapper').innerHTML=``;
+}, 5000);
+            
+            })});
+    </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.6.0/jspdf.plugin.autotable.min.js"></script>
+</body>
+
+
+
+</html>
+

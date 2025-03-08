@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Security System</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <!-- inject:css-->
+
+    <link rel="stylesheet" href="css/plugin.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- endinject -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="https://voags.com/assets/imgs/home1/logo.webp">
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search">
+        <form class="search-form">
+            <span data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="img/svg/bars.svg" alt="img"></a>
+                <a class="navbar-brand" href="#"><img class="dark" src="https://voags.com/Media/website.png" alt="svg"><img class="light" src="img/website-1.png" alt="img"></a>
+                <form action="https://demo.jsnorm.com/" class="search-form">
+                    <span data-feather="search"></span>
+                    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                </form>
+              
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <li class="nav-search d-none">
+                        <a href="#" class="search-toggle">
+                            <i class="la la-search"></i>
+                            <i class="la la-times"></i>
+                        </a>
+                        <form action="https://demo.jsnorm.com/" class="search-form-topMenu">
+                            <span class="search-icon" data-feather="search"></span>
+                            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                        </form>
+                    </li>
+                    
+                    <!-- ends: nav-message -->
+                    <li class="nav-notification">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle">
+                                <span data-feather="bell"></span></a>
+                            <div class="dropdown-wrapper">
+                                <h2 class="dropdown-wrapper__title">Notifications <span class="badge-circle badge-warning ml-1">4</span></h2>
+                                <ul>
+                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--primary">
+                                            <span data-feather="inbox"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--secondary">
+                                            <span data-feather="upload"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--success">
+                                            <span data-feather="log-in"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--info">
+                                            <span data-feather="at-sign"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                                        <div class="nav-notification__type nav-notification__type--danger">
+                                            <span data-feather="heart"></span>
+                                        </div>
+                                        <div class="nav-notification__details">
+                                            <p>
+                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
+                                                <span>sent you a message</span>
+                                            </p>
+                                            <p>
+                                                <span class="time-posted">5 hours ago</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="dropdown-wrapper__more">See all incoming activity</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                   
+                    <!-- ends: .nav-support -->
+                    <li class="nav-flag-select">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/flag.png" alt="" class="rounded-circle"></a>
+                            <div class="dropdown-wrapper dropdown-wrapper--small">
+                                <a href="#"><img src="img/eng.png" alt=""> English</a>
+                                <a href="#"><img src="img/ger.png" alt=""> German</a>
+                                <a href="#"><img src="img/spa.png" alt=""> Spanish</a>
+                                <a href="#"><img src="img/tur.png" alt=""> Turkish</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- ends: .nav-flag-select -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/author-nav.jpg" alt="" class="rounded-circle"></a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        <img src="img/author-nav.jpg" alt="" class="rounded-circle">
+                                    </div>
+                                    <div>
+                                        <h6>John Doe</h6>
+                                        <span>Owner</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                   
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends: .nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span>Main Pages</span>
+                        </li>
+                        <li class="has-child open">
+                            <a href="#" class="">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span onclick="window.location='dashboard.html'" class="menu-text">Dashboard</span>
+                             
+                            </a>
+                            
+                        </li>
+
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="user" class="nav-icon"></span>
+                                <span class="menu-text">Personnel Management</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 128px; left: 214px;">
+                                <li>
+                                    <a class="" href="employees.html">Employees</a>
+                                </li>
+                                <li>
+                                    <a class="" href="ai-document-scanner.html">AI Document Scanner</a>
+                                </li>
+                                <li>
+                                    <a class="" href="digital-signatures.html">Digital Signatures</a>
+                                </li>
+                                <li>
+                                    <a class="" href="document-reminders.html">Document Reminders</a>
+                                </li>
+                                <li>
+                                    <a class="" href="access-control.html">Access Control</a>
+                                </li>
+                                
+                              
+                            </ul>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="clipboard" class="nav-icon"></span>
+                                <span class="menu-text">Reporting & Protocols</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 128px; left: 214px;">
+                                <li>
+                                    <a class="" href="security-reports.html">Security Reports</a>
+                                </li>
+                                <li>
+                                    <a class="" href="auto-correction.html">Suggestion & Correction</a>
+                                </li>
+                                <li>
+                                    <a class="" href="theft&tracking-logs.html">Theft & Tracking Logs</a>
+                                </li>
+                                <li>
+                                    <a class="" href="integration_subcontract&personal-records.html">Subcontractor & Personnel </a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                            
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="crosshair" class="nav-icon"></span>
+                                <span class="menu-text">Scheduling & Tracking</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul style="top: 128px; left: 214px;">
+                                <li>
+                                    <a class="" href="online-booking.html">Appointment Booking</a>
+                                </li>
+                                <li>
+                                    <a class="" href="checkin-checkout.html">Checkin & Checkout</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                        <li class="has-child open">
+                            <a href="digital-registration&contract-management.html">
+                                <span data-feather="package" class="nav-icon"></span>
+                                <span  onclick="window.location='digital-registration&contract-management.html'" class="menu-text">Subcontractors</span>
+                             
+                            </a>
+                            
+                        </li>
+                        <li class="has-child open">
+                            <a class="active" href="duty-instructions.html">
+                                <span data-feather="briefcase" class="nav-icon"></span>
+                                <span onclick="window.location='duty-instructions.html'" class="menu-text">Duty Instructions</span>
+                             
+                            </a>
+                            
+                        </li>
+                        <li class="has-child open">
+                            <a href="media-uploads.html">
+                                <span data-feather="upload-cloud" class="nav-icon"></span>
+                                <span onclick="window.location='media-uploads.html'" class="menu-text">Media Uploads</span>
+                             
+                            </a>
+                            
+                        </li>
+                       
+
+                  
+
+
+
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-breadcrumb">
+
+                            <div class="breadcrumb-main add-contact justify-content-sm-between ">
+                                <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                                    <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
+                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Duty Instruction & Object Information</h4>
+                                        <span class="sub-title ml-sm-25 pl-sm-25"></span>
+                                    </div>
+
+                                    
+
+                                </div>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contact-list-wrap mb-25">
+                            <div class="contact-list bg-white radius-xl w-100">
+                                <div class="card shadow p-4 mb-4">
+                                    <h4 class="mb-3">Live Duty Instructions</h4>
+                                    <div class="duty-box" id="dutyBox">
+                                        <p><strong>[08:00 AM]</strong> Morning shift security check started.</p>
+                                    </div>
+                                    <button class="btn btn-primary mt-3" onclick="addDutyUpdate()">Add Duty Update</button>
+                                </div>
+                            
+                              
+                                <div class="card shadow p-4 mb-4">
+                                    <h4 class="mb-3">Patrol & Closing Procedures</h4>
+                                    <form id="checklistForm">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkpoint1">
+                                            <label class="form-check-label" for="checkpoint1">Check perimeter security</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkpoint2">
+                                            <label class="form-check-label" for="checkpoint2">Verify entry logs</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkpoint3">
+                                            <label class="form-check-label" for="checkpoint3">Inspect security cameras</label>
+                                        </div>
+                                        <button type="button" class="btn btn-success mt-3" onclick="submitChecklist()">Submit Checklist</button>
+                                    </form>
+                                </div>
+                            
+                             
+                                <div class="card shadow p-4">
+                                    <h4 class="mb-3">Object-Specific Security Details</h4>
+                                    <div class="object-details">
+                                        <p><strong>📍 Location:</strong> Warehouse #5</p>
+                                        <p><strong>🔑 Access Level:</strong> Restricted</p>
+                                        <p><strong>🚪 Entry Code:</strong> 7589</p>
+                                    </div>
+                                    <button class="btn btn-warning mt-3" onclick="updateObjectDetails()">Update Details</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                        
+                           
+                            </div>
+                        </div>
+                        
+                       
+                        
+                    </div>
+                  
+                    <!-- ends: col-12 -->
+                </div>
+            </div>
+
+        </div>
+       
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+    <div class="overlay-dark-sidebar"></div>
+    <div class="customizer-overlay"></div>
+
+    <a href="#" class="customizer-trigger">
+        <span data-feather="settings"></span></a>
+        <div class="customizer-wrapper">
+            <div class="customizer">
+                <div class="customizer__head">
+                    <h4 class="customizer__title">Setting</h4>
+                    <span class="customizer__sub-title">Customize your dashboard theme</span>
+                    <a href="#" class="customizer-close">
+                        <span data-feather="x"></span></a>
+                </div>
+                <div class="customizer__body">
+              
+                    <!-- ends: .customizer__single -->
+    
+                    <div class="customizer__single">
+                        <h4>Theme</h4>
+                        <ul class="customizer-list d-flex l_sidebar">
+                            <li class="customizer-list__item">
+                                <a href="#" data-layout="light" class="active">
+                                    <img src="img/light.png" alt="">
+                                    <i class="fa fa-check-circle"></i>
+                                </a>
+                            </li>
+                            <li class="customizer-list__item">
+                                <a href="#" data-layout="dark">
+                                    <img src="img/dark.png" alt="">
+                                    <i class="fa fa-check-circle"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- ends: .customizer__single -->
+    
+                 
+                    <!-- ends: .customizer__single -->
+                </div>
+            </div>
+        </div>
+    
+
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDduF2tLXicDEPDMAtC6-NLOekX0A5vlnY"></script>
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script>
+
+        function addDutyUpdate() {
+            let dutyBox = document.getElementById("dutyBox");
+            let timestamp = new Date().toLocaleTimeString();
+            dutyBox.innerHTML += `<p><strong>[${timestamp}]</strong> New duty instruction added.</p>`;
+        }
+    
+       
+        function submitChecklist() {
+            let checkpoints = document.querySelectorAll('.form-check-input');
+            let allChecked = true;
+            checkpoints.forEach(chk => {
+                if (!chk.checked) {
+                    allChecked = false;
+                }
+            });
+    
+            if (allChecked) {
+                Swal.fire({
+                    title: "✅ All Tasks Completed!",
+                    text: "Patrol & Closing Procedures Successfully Completed.",
+                    icon: "success"
+                });
+            } else {
+                Swal.fire({
+                    title: "⚠️ Incomplete Tasks!",
+                    text: "Please complete all tasks before submitting.",
+                    icon: "warning"
+                });
+            }
+        }
+    
+      
+        function updateObjectDetails() {
+            Swal.fire({
+                title: "🔐 Update Security Details",
+                input: "text",
+                inputLabel: "Enter New Entry Code",
+                showCancelButton: true,
+                inputValidator: (value) => {
+                    if (!value) {
+                        return "Entry code cannot be empty!";
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.querySelector(".object-details").innerHTML = `
+                        <p><strong>📍 Location:</strong> Warehouse #5</p>
+                        <p><strong>🔑 Access Level:</strong> Restricted</p>
+                        <p><strong>🚪 Entry Code:</strong> ${result.value}</p>
+                    `;
+                    Swal.fire("Updated!", "Security details have been updated.", "success");
+                }
+            });
+        }
+    </script>
+    
+    <!-- endinject-->
+</body>
+
+
+
+</html>

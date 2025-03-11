@@ -271,7 +271,7 @@
                                     <a class="" href="online-booking.html">Appointment Booking</a>
                                 </li>
                                 <li>
-                                    <a class="" href="checkin-checkout.html">Checkin & Checkout</a>
+                                    
                                 </li>
                               
                             </ul>
@@ -359,7 +359,9 @@
                                                         <li class="nav-item">
                                                             <a class="nav-link" id="tab-v-3-tab" data-toggle="tab" href="#tab-v-3" role="tab" aria-controls="tab-v-3" aria-selected="false">Facial Recognition</a>
                                                         </li>
-        
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" id="tab-v-4-tab" data-toggle="tab" href="#tab-v-4" role="tab" aria-controls="tab-v-4" aria-selected="false">AI Scanner</a>
+                                                        </li>
         
         
                                                     </ul>
@@ -382,7 +384,74 @@
                                                             <div class="image-preview" id="facePreview">Upload a face image for identity verification</div>
                                                             <button class="btn btn-success mt-3" onclick="recognizeFace()">Verify Identity</button>
                                                         </div>
-        
+                                                        <div class="tab-pane fade" id="tab-v-4" role="tabpanel" aria-labelledby="tab-v-4-tab">
+                                                            <div class="container scanner-container">
+                                                                <div class="scanner-header">
+                                                                    <h3><i class="fas fa-id-card"></i> AI ID Scanner</h3>
+                                                                    <p>Scan or Upload ID to auto-fill employee details.</p>
+                                                                </div>
+                                                        
+                                                                <!-- Upload / Scan Buttons -->
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-6 mb-2">
+                                                                        <button class="btn btn-success btn-scan">
+                                                                            <i class="fas fa-upload"></i> Upload ID
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="col-md-6 mb-2">
+                                                                        <button class="btn btn-success btn-scan">
+                                                                            <i class="fas fa-camera"></i> Scan with Camera
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                        
+                                                                <!-- Preview of Uploaded/Scanned ID -->
+                                                                <div class="row mb-4">
+                                                                    <div class="col-md-12">
+                                                                        <div class="card">
+                                                                            <div class="card-header">
+                                                                                ID Preview
+                                                                            </div>
+                                                                            <div class="card-body text-center">
+                                                                                <img src="https://via.placeholder.com/400x200?text=ID+Preview" alt="ID Preview"
+                                                                                    class="preview-img">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        
+                                                                <!-- Auto-filled Employee Details -->
+                                                                <div class="form-section">
+                                                                    <h5>Employee Details</h5>
+                                                                    <p class="status-message"><i class="fas fa-check-circle"></i> Data fetched successfully from ID scan!</p>
+                                                                    <form>
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="employeeName">Employee Name</label>
+                                                                                <input type="text" class="form-control" id="employeeName" placeholder="Auto-filled" value="John Doe" readonly>
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="documentType">Document Type</label>
+                                                                                <input type="text" class="form-control" id="documentType" placeholder="Auto-filled" value="Passport" readonly>
+                                                                            </div>
+                                                                        </div>
+                                                        
+                                                                        <div class="form-row">
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="documentNumber">Document Number</label>
+                                                                                <input type="text" class="form-control" id="documentNumber" placeholder="Auto-filled" value="A12345678" readonly>
+                                                                            </div>
+                                                                            <div class="form-group col-md-6">
+                                                                                <label for="expiryDate">Expiry Date</label>
+                                                                                <input type="date" class="form-control" id="expiryDate" value="2025-12-31" readonly>
+                                                                            </div>
+                                                                        </div>
+                                                        
+                                                                        <button type="submit" class="btn btn-success btn-block">Save Employee Record</button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
         

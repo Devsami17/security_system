@@ -271,7 +271,7 @@
                                     <a class="" href="online-booking.html">Appointment Booking</a>
                                 </li>
                                 <li>
-                                    <a class="" href="checkin-checkout.html">Checkin & Checkout</a>
+                                    
                                 </li>
                               
                             </ul>
@@ -314,162 +314,232 @@
         </aside>
 
         <div class="contents">
-
             <div class="container-fluid">
+                <!-- Breadcrumb -->
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-breadcrumb">
-
-                            <div class="breadcrumb-main add-contact justify-content-sm-between ">
-                                <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                            <div class="breadcrumb-main add-contact justify-content-sm-between">
+                                <div class="d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
                                     <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
                                         <h4 class="text-capitalize fw-500 breadcrumb-title">Digital Registration & Contract Management</h4>
                                         <span class="sub-title ml-sm-25 pl-sm-25"></span>
                                     </div>
-
-                                    
-
                                 </div>
-                            
                             </div>
-
                         </div>
                     </div>
                 </div>
-
+        
+                <!-- Tabs Section -->
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-list-wrap mb-25">
                             <div class="contact-list bg-white radius-xl w-100">
                                 <div class="col-12">
                                     <div class="card card-default card-md mb-4">
-                                        
-                                       
-                                            <div class="tab-wrapper">
+                                        <div class="tab-wrapper">
+                                            <div class="atbd-tab tab-horizontal">
+                                                <ul class="nav nav-tabs vertical-tabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="tab-v-1-tab" data-toggle="tab" href="#tab-v-1" role="tab">Digital Registration</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="tab-v-2-tab" data-toggle="tab" href="#tab-v-2" role="tab">Certificate Verification</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="tab-v-3-tab" data-toggle="tab" href="#tab-v-3" role="tab">Contract Management</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="tab-v-4-tab" data-toggle="tab" href="#tab-v-4" role="tab">Document Storage</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="tab-v-5-tab" data-toggle="tab" href="#tab-v-5" role="tab">Task Approval</a>
+                                                    </li>
+                                                </ul>
         
-                                                <div class="atbd-tab tab-horizontal">
-                                                    <ul class="nav nav-tabs vertical-tabs" role="tablist">
+                                                <div class="tab-content">
+                                                    <!-- Registration Tab -->
+                                                    <div class="tab-pane fade show active" id="tab-v-1" role="tabpanel">
+                                                        <form id="registrationForm">
+                                                            <div class="row">
+                                                                <div class="col-md-6 mb-2">
+                                                                    <label for="name" class="form-label">Full Name</label>
+                                                                    <input type="text" class="form-control" id="name" required>
+                                                                </div>
+                                                                <div class="col-md-6 mb-2">
+                                                                    <label for="phone" class="form-label">Phone Number</label>
+                                                                    <input type="text" class="form-control" id="phone" required>
+                                                                </div>
+                                                                <div class="col-md-6 mb-2">
+                                                                    <label for="email" class="form-label">Email</label>
+                                                                    <input type="email" class="form-control" id="email" required>
+                                                                </div>
+                                                                <div class="col-md-6 mb-2">
+                                                                    <label for="role" class="form-label">Role</label>
+                                                                    <select class="form-control" id="role" required>
+                                                                        <option value="">Select Role</option>
+                                                                        <option value="Subcontractor">Subcontractor</option>
+                                                                        <option value="Security Personnel">Security Personnel</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6 mb-2">
+                                                                    <label for="location" class="form-label">Operational Site</label>
+                                                                    <select id="location" class="form-control" required>
+                                                                        <option value="">Select Location</option>
+                                                                        <option value="Site A">Site A</option>
+                                                                        <option value="Site B">Site B</option>
+                                                                        <option value="Site C">Site C</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
         
-                                                        <li class="nav-item">
-                                                            <a class="nav-link active" id="tab-v-1-tab" data-toggle="tab" href="#tab-v-1" role="tab" aria-controls="tab-v-1" aria-selected="true">Digital Registration</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" id="tab-v-2-tab" data-toggle="tab" href="#tab-v-2" role="tab" aria-controls="tab-v-2" aria-selected="false">Automated Certificate Verification</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" id="tab-v-3-tab" data-toggle="tab" href="#tab-v-3" role="tab" aria-controls="tab-v-3" aria-selected="false">Contract Management</a>
-                                                        </li>
+                                                            <div class="row mt-3">
+                                                                <div class="col-md-6">
+                                                                    <label for="contractFile" class="form-label">Upload Contract</label>
+                                                                    <input type="file" class="form-control" id="contractFile" accept=".pdf,.doc,.docx" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="certificateFile" class="form-label">Upload Certification</label>
+                                                                    <input type="file" class="form-control" id="certificateFile" accept=".pdf,.jpg,.png" required>
+                                                                </div>
+                                                            </div>
         
+                                                            <button type="submit" class="btn btn-success btn-xs mt-4">Submit Registration</button>
+                                                        </form>
+                                                    </div>
         
+                                                    <!-- Certificate Verification Tab -->
+                                                    <div class="tab-pane fade" id="tab-v-2" role="tabpanel">
+                                                        <input type="text" id="certID" class="form-control" placeholder="Enter Certificate ID">
+                                                        <button class="btn btn-primary btn-small mt-2" onclick="verifyCertificate()">Verify</button>
+                                                        <p id="verificationResult" class="mt-2"></p>
+                                                    </div>
         
-                                                    </ul>
-                                                    <div class="tab-content">
+                                                    <!-- Contract Management Tab -->
+                                                    <div class="tab-pane fade" id="tab-v-3" role="tabpanel">
+                                                        <table class="table table-bordered">
+                                                            <thead class="table-dark">
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Role</th>
+                                                                    <th>Location</th>
+                                                                    <th>Contract</th>
+                                                                    <th>Certificate</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="contractTable"></tbody>
+                                                        </table>
+                                                    </div>
         
-        
-        
-                                                        <div class="tab-pane fade show active" id="tab-v-1" role="tabpanel" aria-labelledby="tab-v-1-tab">
-                                                            <form id="registrationForm">
-                                                                <div class="row">
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="name" class="form-label">Full Name</label>
-                                                                        <input type="text" class="form-control" id="name" required>
-                                                                    </div>
-                                                                    <div class="col-md-6 mb-2">
-                                                                        <label for="role" class="form-label">Role</label>
-                                                                        <select class="form-control" id="role" required>
-                                                                            <option value="">Select Role</option>
-                                                                            <option value="Subcontractor">Subcontractor</option>
-                                                                            <option value="Security Personnel">Security Personnel</option>
-                                                                        </select>
+                                                    <!-- Document Storage Tab -->
+                                                    <div class="tab-pane fade" id="tab-v-4" role="tabpanel">
+                                                        <div class="accordion" id="documentAccordion">
+                                                            <div class="card">
+                                                                <div class="card-header" id="contractsHeading">
+                                                                    <h2>
+                                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#contracts">Contracts</button>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="contracts" class="collapse show" data-parent="#documentAccordion">
+                                                                    <div class="card-body">
+                                                                        <ul>
+                                                                            <li><a href="#">Contract1.pdf</a></li>
+                                                                            <li><a href="#">Contract2.pdf</a></li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
-                                                    
-                                                                <div class="row mt-3">
-                                                                    <div class="col-md-6">
-                                                                        <label for="contractFile" class="form-label">Upload Contract</label>
-                                                                        <input type="file" class="form-control" id="contractFile" accept=".pdf,.doc,.docx" required>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <label for="certificateFile" class="form-label">Upload Certification</label>
-                                                                        <input type="file" class="form-control" id="certificateFile" accept=".pdf,.jpg,.png" required>
+                                                            </div>
+        
+                                                            <div class="card">
+                                                                <div class="card-header" id="invoicesHeading">
+                                                                    <h2>
+                                                                        <button class="btn btn-link" data-toggle="collapse" data-target="#invoices">Invoices</button>
+                                                                    </h2>
+                                                                </div>
+                                                                <div id="invoices" class="collapse" data-parent="#documentAccordion">
+                                                                    <div class="card-body">
+                                                                        <ul>
+                                                                            <li><a href="#">Invoice1.pdf</a></li>
+                                                                            <li><a href="#">Invoice2.pdf</a></li>
+                                                                        </ul>
                                                                     </div>
                                                                 </div>
-                                                    
-                                                                <button type="submit" class="btn btn-success btn-xs mt-4">Submit Registration</button>
-                                                            </form>
+                                                            </div>
                                                         </div>
-                                                        <div class="tab-pane fade" id="tab-v-2" role="tabpanel" aria-labelledby="tab-v-2-tab">
-                                                            <input type="text" id="certID" class="form-control" placeholder="Enter Certificate ID">
-                                                            <button class="btn btn-primary btn-small mt-2" onclick="verifyCertificate()">Verify</button>
-                                                            <p id="verificationResult" class="mt-2"></p>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="tab-v-3" role="tabpanel" aria-labelledby="tab-v-3-tab">
-                                                            <table class="table table-bordered">
-                                                                <thead class="table-dark">
-                                                                    <tr>
-                                                                        <th>Name</th>
-                                                                        <th>Role</th>
-                                                                        <th>Contract</th>
-                                                                        <th>Certificate</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody id="contractTable">
-                                                                   
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
+                                                    </div>
         
+                                                    <!-- Task Approval Tab -->
+                                                    <div class="tab-pane fade" id="tab-v-5" role="tabpanel">
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Task</th>
+                                                                    <th>Assigned To</th>
+                                                                    <th>Status</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Site Inspection</td>
+                                                                    <td>John Doe</td>
+                                                                    <td style="width: 100px;"><span class="emp-status bg-opacity-warning color-warning rounded-pill userDatatable-content-status active">Pending</span></td>
+                                                                    <td ><button class="btn btn-success btn-sm" onclick="approveTask(this)">Approve</button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
-        
                                             </div>
-
-                                    </div>
-                                    <!-- ends: .card -->
+                                        </div>
+                                    </div> <!-- ends: .card -->
                                 </div>
                             </div>
-                        
-                        
-                           
-                            </div>
                         </div>
-                        
-                       
-                        
                     </div>
-                    <script>
-
-function verifyCertificate() {
-        let certID = document.getElementById("certID").value;
-        if (certID === "12345") {
-            document.getElementById("verificationResult").innerHTML = `<span class="text-success">✔ Certificate Verified</span>`;
-        } else {
-            document.getElementById("verificationResult").innerHTML = `<span class="text-danger">❌ Invalid Certificate</span>`;
-        }
-    }
-    document.getElementById("registrationForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        let name = document.getElementById("name").value;
-        let role = document.getElementById("role").value;
-        let contractFile = document.getElementById("contractFile").files[0].name;
-        let certificateFile = document.getElementById("certificateFile").files[0].name;
-
-        let table = document.getElementById("contractTable");
-        let row = table.insertRow();
-        row.insertCell(0).innerText = name;
-        row.insertCell(1).innerText = role;
-        row.insertCell(2).innerHTML = `<a href="#">${contractFile}</a>`;
-        row.insertCell(3).innerHTML = `<a href="#">${certificateFile}</a>`;
-
-      
-
-        document.getElementById("registrationForm").reset();
-    });
-                    </script>
-                    <!-- ends: col-12 -->
-                </div>
-            </div>
-
+                </div> <!-- ends: row -->
+            </div> <!-- ends: container-fluid -->
+        
+            <!-- Scripts -->
+            <script>
+                function verifyCertificate() {
+                    let certID = document.getElementById("certID").value;
+                    if (certID === "12345") {
+                        document.getElementById("verificationResult").innerHTML = `<span class="text-success">✔ Certificate Verified</span>`;
+                    } else {
+                        document.getElementById("verificationResult").innerHTML = `<span class="text-danger">❌ Invalid Certificate</span>`;
+                    }
+                }
+        
+                document.getElementById("registrationForm").addEventListener("submit", function(event) {
+                    event.preventDefault();
+        
+                    let name = document.getElementById("name").value;
+                    let role = document.getElementById("role").value;
+                    let location = document.getElementById("location").value;
+                    let contractFile = document.getElementById("contractFile").files[0]?.name || 'N/A';
+                    let certificateFile = document.getElementById("certificateFile").files[0]?.name || 'N/A';
+        
+                    let table = document.getElementById("contractTable");
+                    let row = table.insertRow();
+                    row.insertCell(0).innerText = name;
+                    row.insertCell(1).innerText = role;
+                    row.insertCell(2).innerText = location;
+                    row.insertCell(3).innerHTML = `<a href="#">${contractFile}</a>`;
+                    row.insertCell(4).innerHTML = `<a href="#">${certificateFile}</a>`;
+        
+                    document.getElementById("registrationForm").reset();
+                });
+        
+                function approveTask(button) {
+                    let row = button.closest('tr');
+                    row.querySelector('td:nth-child(3)').innerHTML = '<span class="badge badge-success">Approved</span>';
+                    button.remove();
+                }
+            </script>
+        </div> <!-- ends: contents -->
+        
         </div>
        
     </main>

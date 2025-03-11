@@ -271,7 +271,7 @@
                                     <a class="" href="online-booking.html">Appointment Booking</a>
                                 </li>
                                 <li>
-                                    <a class="" href="checkin-checkout.html">Checkin & Checkout</a>
+                                    
                                 </li>
                               
                             </ul>
@@ -340,31 +340,64 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-list-wrap mb-25">
+
                             <!-- Digital Signature Header -->
-     
-        <p class="text-muted">Secure and legally binding digital signature integration with <strong>Signo TEC</strong>.</p>
-
-        <!-- Signature Canvas -->
-        <div class="signature-box border rounded p-3 text-center mb-3">
-            <canvas id="signatureCanvas" class="w-100 border rounded" height="200"></canvas>
-        </div>
-
-        <!-- Buttons -->
-        <div class="d-flex justify-content-between">
-            <button class="btn btn-danger" onclick="clearSignature()">Clear</button>
-            <button class="btn btn-success" onclick="saveSignature()">Save Signature</button>
-        </div>
-
-        <!-- Signature Status -->
-        <div id="signatureStatus" class="mt-3 text-center text-success   fs-14"></div>
-
-        <!-- Signature Preview -->
-        <div id="signaturePreview" class="mt-4 border-top pt-3 d-none text-center">
-            <h5 class="text-dark fw-bold">Signed Document</h5>
-            <img id="savedSignature" class="border rounded shadow-sm mt-2" width="300" alt="Digital Signature Preview">
-            <p class="text-muted mt-2">This signature has been securely saved and verified.</p>
-        </div>
+                            <h4>Digital Signature Panel</h4>
+                            <p class="text-muted">
+                                Secure and legally binding digital signature integration with <strong>Signo TEC</strong>.
+                            </p>
+                        
+                            <!-- Step 1: Select Document -->
+                            <div class="form-group">
+                                <label for="documentSelect">Select Document:</label>
+                                <select id="documentSelect" class="form-control">
+                                    <option value="">-- Select Document --</option>
+                                    <option value="contract">Employment Contract</option>
+                                    <option value="nda">NDA Agreement</option>
+                                    <option value="license">License Renewal Form</option>
+                                </select>
+                            </div>
+                        
+                            <!-- Step 2: Set Permissions -->
+                            <div class="form-group">
+                                <label>Assign Permission:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="permission" id="readOnly" value="Read Only">
+                                    <label class="form-check-label" for="readOnly">Read Only</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="permission" id="canSign" value="Can Sign">
+                                    <label class="form-check-label" for="canSign">Can Sign</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="permission" id="canApprove" value="Can Approve">
+                                    <label class="form-check-label" for="canApprove">Can Approve</label>
+                                </div>
+                            </div>
+                        
+                            <!-- Step 3: Signature Canvas -->
+                            <div class="signature-box border rounded p-3 text-center mb-3">
+                                <canvas id="signatureCanvas" class="w-100 border rounded" height="200"></canvas>
+                            </div>
+                        
+                            <!-- Buttons -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-danger" onclick="clearSignature()">Clear</button>
+                                <button class="btn btn-success" onclick="saveSignature()">Save Signature</button>
+                            </div>
+                        
+                            <!-- Signature Status -->
+                            <div id="signatureStatus" class="mt-3 text-center text-success fs-14"></div>
+                        
+                            <!-- Signature Preview -->
+                            <div id="signaturePreview" class="mt-4 border-top pt-3 d-none text-center">
+                                <h5 class="text-dark fw-bold">Signed Document</h5>
+                                <img id="savedSignature" class="border rounded shadow-sm mt-2" width="300" alt="Digital Signature Preview">
+                                <p class="text-muted mt-2">This signature has been securely saved and verified.</p>
+                            </div>
+                        
                         </div>
+                        
                         
 
                       

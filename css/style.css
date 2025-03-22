@@ -11,3 +11,102 @@ left: 50%;
     justify-content: center;
     margin-top: 20px;
 }
+.strikingDash-top-menu ul li a.active{
+    font-weight:700;
+}
+.userDatatable-content-status{
+    color: #fff !important;
+}
+.layout-dark .strikingDash-top-menu ul li a.active{
+    color:#5f63f2 !important;
+}
+@media only screen and (max-width:800px){
+    .table-responsive table{
+        width: 1200px !important;
+    }
+    .navbar-left .navbar-brand img, .navbar-left .navbar-brand svg{
+        max-width: 90px !important;
+    }
+    .budget-boxes .card{
+margin-bottom: 20px;
+    }
+}
+.bg-opacity-danger.userDatatable-content-status{
+    background-color: #ee1d1d;
+}
+.bg-opacity-success.userDatatable-content-status{
+    background-color: #1c8515;
+}
+.bg-opacity-info.userDatatable-content-status{
+    background-color: #0d7bff ;
+}
+.bg-opacity-warning.userDatatable-content-status{
+    background-color: #ffa30d ;
+}
+.live-alerts-count{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    font-size: 9px;
+width: 10px;
+height: 16px    ;
+}
+.quick-access-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.quick-access-item {
+    /* flex: 1 1 250px; */
+    width: 30%;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-access-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.05);
+    transform: rotate(25deg);
+    pointer-events: none;
+}
+
+.quick-access-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.quick-access-item i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.quick-access-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quick-access-item {
+        flex: 1 1 100%;
+    }
+}

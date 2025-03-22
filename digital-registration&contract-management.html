@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://voags.com/assets/imgs/home1/logo.webp">
 </head>
 
-<body class="layout-light side-menu overlayScroll">
+<body class="layout-light top-menu overlayScroll">
     <div class="mobile-search">
         <form class="search-form">
             <span data-feather="search"></span>
@@ -41,120 +41,122 @@
                     <span data-feather="search"></span>
                     <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
                 </form>
-              
+                <div class="top-menu">
+                    <div class="strikingDash-top-menu position-relative">
+                      <ul>
+                  
+                        <!-- 1. Overview -->
+                        <li>
+                          <a href="dashboard.html">Dashboard</a>
+                        </li>
+                  
+                        <!-- 2. Objects & Invoices -->
+                        <li class="has-subMenu">
+                          <a href="#">Personnel Management</a>
+                          <ul class="subMenu">
+                            <li>
+                                <a class="" href="employees.html">Employees</a>
+                            </li>
+                            <li>
+                                <a class="" href="ai-document-scanner.html">AI Document Recognition</a>
+                            </li>
+                            
+                            <li>
+                                <a class="" href="document-reminders.html">Digital Personnel Records</a>
+                            </li>
+                            <li>
+                                <a class="" href="access-control.html">Access Control</a>
+                            </li>
+                            <li>
+                                <a href="media-uploads.html">Media Uploads</a>
+                              </li>
+                          </ul>
+                        </li>
+                  
+                        <!-- 3. Reports -->
+                        <li class="has-subMenu">
+                          <a href="#">Reporting & Protocols</a>
+                          <ul class="subMenu">
+                            <li>
+                                <a class="" href="security-reports.html">Automated Report</a>
+                            </li>
+                            <li>
+                                <a class="" href="auto-correction.html">Suggestion & Correction</a>
+                            </li>
+                            <li>
+                              <a class="" href="digital-signatures.html">Digital Signatures</a>
+                          </li>
+                            <li>
+
+                                <a class="" href="theft&tracking-logs.html">Theft & Tracking Logs</a>
+                            </li>
+                            <li>
+                                <a class="" href="integration_subcontract&personal-records.html">Subcontractor & Personnel </a>
+                            </li>
+                          </ul>
+                        </li>
+                  
+                        <!-- 4. Training -->
+                        <li>
+                          <a href="online-booking.html">Appointment Booking</a>
+                        </li>
+                  
+                        <!-- 5. Organization -->
+                   
+                        <li>
+                            <a href="duty-instructions.html">Instructions</a>
+                          </li>
+                          <li>
+                            <a href="setting.html">Settings</a>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                
             </div>
             <!-- ends: navbar-left -->
 
             <div class="navbar-right">
                 <ul class="navbar-right__menu">
-                    <li class="nav-search d-none">
-                        <a href="#" class="search-toggle">
-                            <i class="la la-search"></i>
-                            <i class="la la-times"></i>
+              
+                    <li>
+                        <a href="javascript:;" data-layout="dark" class="nav-item-toggle">
+                          <span data-feather="sun"></span>
                         </a>
-                        <form action="https://demo.jsnorm.com/" class="search-form-topMenu">
-                            <span class="search-icon" data-feather="search"></span>
-                            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
-                        </form>
-                    </li>
-                    
+                      </li>
+                      
+               
                     <!-- ends: nav-message -->
                     <li class="nav-notification">
                         <div class="dropdown-custom">
-                            <a href="javascript:;" class="nav-item-toggle">
-                                <span data-feather="bell"></span></a>
-                            <div class="dropdown-wrapper">
-                                <h2 class="dropdown-wrapper__title">Notifications <span class="badge-circle badge-warning ml-1">4</span></h2>
-                                <ul>
-                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                        <div class="nav-notification__type nav-notification__type--primary">
-                                            <span data-feather="inbox"></span>
-                                        </div>
-                                        <div class="nav-notification__details">
-                                            <p>
-                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                                <span>sent you a message</span>
-                                            </p>
-                                            <p>
-                                                <span class="time-posted">5 hours ago</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                        <div class="nav-notification__type nav-notification__type--secondary">
-                                            <span data-feather="upload"></span>
-                                        </div>
-                                        <div class="nav-notification__details">
-                                            <p>
-                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                                <span>sent you a message</span>
-                                            </p>
-                                            <p>
-                                                <span class="time-posted">5 hours ago</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
-                                        <div class="nav-notification__type nav-notification__type--success">
-                                            <span data-feather="log-in"></span>
-                                        </div>
-                                        <div class="nav-notification__details">
-                                            <p>
-                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                                <span>sent you a message</span>
-                                            </p>
-                                            <p>
-                                                <span class="time-posted">5 hours ago</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                        <div class="nav-notification__type nav-notification__type--info">
-                                            <span data-feather="at-sign"></span>
-                                        </div>
-                                        <div class="nav-notification__details">
-                                            <p>
-                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                                <span>sent you a message</span>
-                                            </p>
-                                            <p>
-                                                <span class="time-posted">5 hours ago</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
-                                        <div class="nav-notification__type nav-notification__type--danger">
-                                            <span data-feather="heart"></span>
-                                        </div>
-                                        <div class="nav-notification__details">
-                                            <p>
-                                                <a href="#" class="subject stretched-link text-truncate" style="max-width: 180px;">James</a>
-                                                <span>sent you a message</span>
-                                            </p>
-                                            <p>
-                                                <span class="time-posted">5 hours ago</span>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <a href="#" class="dropdown-wrapper__more">See all incoming activity</a>
+                          <a href="javascript:;" class="nav-item-toggle">
+                            <span data-feather="bell"></span>
+                            <span class="badge badge-danger live-alerts-count"  id="alert-count">5</span>
+                          </a>
+                          <div class="dropdown-wrapper">
+                            <h2 class="dropdown-wrapper__title">
+                              Security Alerts
+                            
+                            </h2>
+                      
+                            <!-- Dynamic Alert Container -->
+                            <div id="notification-list-container">
+                              <ul class="notification-list">
+                                <!-- Initial Alerts Here (optional) -->
+                              </ul>
                             </div>
+                      
+                            <a href="#" class="dropdown-wrapper__more">View all security logs</a>
+                          </div>
                         </div>
-                    </li>
+                      </li>
+                      
+                    
                     
                    
                     <!-- ends: .nav-support -->
-                    <li class="nav-flag-select">
-                        <div class="dropdown-custom">
-                            <a href="javascript:;" class="nav-item-toggle"><img src="img/flag.png" alt="" class="rounded-circle"></a>
-                            <div class="dropdown-wrapper dropdown-wrapper--small">
-                                <a href="#"><img src="img/eng.png" alt=""> English</a>
-                                <a href="#"><img src="img/ger.png" alt=""> German</a>
-                                <a href="#"><img src="img/spa.png" alt=""> Spanish</a>
-                                <a href="#"><img src="img/tur.png" alt=""> Turkish</a>
-                            </div>
-                        </div>
-                    </li>
+                  
                     <!-- ends: .nav-flag-select -->
                     <li class="nav-author">
                         <div class="dropdown-custom">
@@ -556,44 +558,7 @@
     <div class="overlay-dark-sidebar"></div>
     <div class="customizer-overlay"></div>
 
-    <a href="#" class="customizer-trigger">
-        <span data-feather="settings"></span></a>
-        <div class="customizer-wrapper">
-            <div class="customizer">
-                <div class="customizer__head">
-                    <h4 class="customizer__title">Setting</h4>
-                    <span class="customizer__sub-title">Customize your dashboard theme</span>
-                    <a href="#" class="customizer-close">
-                        <span data-feather="x"></span></a>
-                </div>
-                <div class="customizer__body">
-              
-                    <!-- ends: .customizer__single -->
-    
-                    <div class="customizer__single">
-                        <h4>Theme</h4>
-                        <ul class="customizer-list d-flex l_sidebar">
-                            <li class="customizer-list__item">
-                                <a href="#" data-layout="light" class="active">
-                                    <img src="img/light.png" alt="">
-                                    <i class="fa fa-check-circle"></i>
-                                </a>
-                            </li>
-                            <li class="customizer-list__item">
-                                <a href="#" data-layout="dark">
-                                    <img src="img/dark.png" alt="">
-                                    <i class="fa fa-check-circle"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- ends: .customizer__single -->
-    
-                 
-                    <!-- ends: .customizer__single -->
-                </div>
-            </div>
-        </div>
+
     
 
 

@@ -212,7 +212,7 @@
                             
                         </li>
 
-                        <li class="has-child open ">
+                        <li class="has-child  open">
                             <a href="#" class="active">
                                 <span data-feather="user" class="nav-icon"></span>
                                 <span class="menu-text">Personnel Management</span>
@@ -220,7 +220,7 @@
                             </a>
                             <ul style="top: 128px; left: 214px;">
                                 <li>
-                                    <a class="" href="employees.html">Employees</a>
+                                    <a class="active" href="employees.html">Employees</a>
                                 </li>
                                 <li>
                                     <a class="" href="ai-document-scanner.html">AI Document Scanner</a>
@@ -229,7 +229,7 @@
                                     <a class="" href="digital-signatures.html">Digital Signatures</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="document-reminders.html">Document Reminders</a>
+                                    <a class="" href="document-reminders.html">Document Reminders</a>
                                 </li>
                                 <li>
                                     <a class="" href="access-control.html">Access Control</a>
@@ -314,6 +314,7 @@
                 </div>
             </div>
         </aside>
+
         <div class="contents">
 
             <div class="container-fluid">
@@ -324,11 +325,11 @@
                             <div class="breadcrumb-main add-contact justify-content-sm-between ">
                                 <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
                                     <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
-                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Document Reminders</h4>
+                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Uniform & Equipment Tracking</h4>
                                         <span class="sub-title ml-sm-25 pl-sm-25"></span>
                                     </div>
 
-                                
+                                   
 
                                 </div>
                             
@@ -341,125 +342,143 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-list-wrap mb-25">
-                            <div class="table-responsive">
-                                <table class="table mb-0 table-borderless table-rounded">
-                                    <thead>
-                                        <tr>
-                                            <th>Employee</th>
-                                            <th>Document</th>
-                                            <th>Expiry Date</th>
-                                            <th>Status</th>
-                                            <th>Reminder</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>John Doe</td>
-                                            <td>Passport</td>
-                                            <td>2025-04-10</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">Active</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-info color-info rounded-pill userDatatable-content-status">Reminder Sent</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
+                            <div class="contact-list bg-white radius-xl w-100">
+                              
+                        
+                               
+                                <div class="modal fade" id="investigateReviewModal" tabindex="-1" role="dialog" aria-labelledby="investigateReviewLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content radius-xl">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h6 class="modal-title fw-500" id="investigateReviewLabel">Investigate / Review Item Report</h6>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
                                 
-                                        <tr>
-                                            <td>Willam Crooks</td>
-                                            <td>Passport</td>
-                                            <td>2025-03-10</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Reminder Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
+                                            <!-- Modal Body -->
+                                            <div class="modal-body">
+                                                <form id="investigateReviewForm">
+                                                    
+                                                    <!-- Item Information -->
+                                                    <div class="form-group mb-20">
+                                                        <label>Item Name:</label>
+                                                        <input type="text" class="form-control form-control-lg" id="itemName" readonly value="Reflective Jacket">
+                                                    </div>
                                 
-                                        <tr>
-                                            <td>Alice Johnson</td>
-                                            <td>Visa</td>
-                                            <td>2025-02-20</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-danger color-danger rounded-pill userDatatable-content-status">Expired</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-danger color-danger rounded-pill userDatatable-content-status">Reminder Sent</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
+                                                    <div class="form-group mb-20">
+                                                        <label>Reported By (Employee):</label>
+                                                        <input type="text" class="form-control form-control-lg" id="reportedBy" readonly value="Employee #102">
+                                                    </div>
                                 
-                                        <tr>
-                                            <td>Michael Smith</td>
-                                            <td>Contract</td>
-                                            <td>2025-05-15</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-success color-success rounded-pill userDatatable-content-status">Active</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-info color-info rounded-pill userDatatable-content-status">Reminder Sent</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
+                                                    <div class="form-group mb-20">
+                                                        <label>Report Type:</label>
+                                                        <select class="form-control form-control-lg" id="reportType" disabled>
+                                                            <option value="Damaged" selected>Damaged</option>
+                                                            <option value="Lost">Lost</option>
+                                                        </select>
+                                                    </div>
                                 
-                                        <tr>
-                                            <td>Sophia Williams</td>
-                                            <td>Equipment</td>
-                                            <td>2025-06-30</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Reminder Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
+                                                    <!-- Investigation Notes -->
+                                                    <div class="form-group mb-20">
+                                                        <label>Investigation Notes:</label>
+                                                        <textarea class="form-control form-control-lg" id="investigationNotes" rows="4" placeholder="Add details about your investigation..."></textarea>
+                                                    </div>
                                 
-                                    </tbody>
-                                </table>
+                                                    <!-- Action Taken -->
+                                                    <div class="form-group mb-20">
+                                                        <label>Action Taken:</label>
+                                                        <select class="form-control form-control-lg" id="actionTaken">
+                                                            <option value="">Select Action</option>
+                                                            <option value="Replaced Item">Replaced Item</option>
+                                                            <option value="Repair Ordered">Repair Ordered</option>
+                                                            <option value="Employee Warning Issued">Employee Warning Issued</option>
+                                                            <option value="No Action Needed">No Action Needed</option>
+                                                        </select>
+                                                    </div>
                                 
+                                                    <!-- Update Status -->
+                                                    <div class="form-group mb-20">
+                                                        <label>Update Item Status:</label>
+                                                        <select class="form-control form-control-lg" id="itemStatus">
+                                                            <option value="">Select Status</option>
+                                                            <option value="Available">Available</option>
+                                                            <option value="Damaged">Damaged</option>
+                                                            <option value="Lost">Lost</option>
+                                                            <option value="Replaced">Replaced</option>
+                                                        </select>
+                                                    </div>
+                                
+                                                    <!-- Submit Button -->
+                                                    <div class="button-group d-flex pt-20">
+                                                        <button type="submit" class="btn btn-success btn-default btn-squared w-100">
+                                                            Save Investigation
+                                                        </button>
+                                                    </div>
+                                
+                                                </form>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        
+                                <div class="table-responsive">
+                                    <table class="table mb-0 table-borderless table-rounded">
+                                        <thead>
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Description</th>
+                                                <th>Action</th>
+                                              
+                                            </tr>
+                                        </thead>
+                                    
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="emp-firstname">Damaged Item</span></td>
+                                                <td><span class="emp-lastname"> Reflective Jacket reported by Employee #102</span></td>
+                                                <td>
+                                                    <a data-toggle="modal" data-target="#investigateReviewModal">
+                                                    <button class="btn btn-danger">Investigate</button>
+                                                </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="emp-firstname">Lost Item</span></td>
+                                                <td><span class="emp-lastname">Safety Boots reported by Employee #115</span></td>
+                                                <td>
+                                                    <a data-toggle="modal" data-target="#investigateReviewModal">
+                                                    <button type="button" class="btn btn-warning" >
+                                                        Review
+                                                    </button>
+                                                </a>
+                                                </td>
+                                            </tr>
+                                    
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
                             </div>
                         </div>
                         
-
-                      
-                      
-                        
-                        
+                        <script>
+                        function populateEditModal(element) {
+                            var row = element.closest('tr');
+                            document.getElementById('employee-name').value = row.querySelector('.emp-name').textContent;
+                            document.getElementById('employee-destination').value = row.querySelector('.emp-destination').textContent;
+                            document.getElementById('employee-qualifications').value = row.querySelector('.emp-qualifications').textContent;
+                            document.getElementById('employee-certifications').value = row.querySelector('.emp-certifications').textContent;
+                            document.getElementById('employee-contact').value = row.querySelector('.emp-contact').textContent;
+                            document.getElementById('employee-status').value = row.querySelector('.emp-status').textContent.toLowerCase();
+                        }
+                        </script>
                         
                     </div>
                     <!-- ends: col-12 -->
@@ -490,7 +509,6 @@
     <script src="js/plugins.min.js"></script>
     <script src="js/script.min.js"></script>
     <!-- endinject-->
- 
 </body>
 
 

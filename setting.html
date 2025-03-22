@@ -212,7 +212,7 @@
                             
                         </li>
 
-                        <li class="has-child open ">
+                        <li class="has-child  open">
                             <a href="#" class="active">
                                 <span data-feather="user" class="nav-icon"></span>
                                 <span class="menu-text">Personnel Management</span>
@@ -220,7 +220,7 @@
                             </a>
                             <ul style="top: 128px; left: 214px;">
                                 <li>
-                                    <a class="" href="employees.html">Employees</a>
+                                    <a class="active" href="employees.html">Employees</a>
                                 </li>
                                 <li>
                                     <a class="" href="ai-document-scanner.html">AI Document Scanner</a>
@@ -229,7 +229,7 @@
                                     <a class="" href="digital-signatures.html">Digital Signatures</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="document-reminders.html">Document Reminders</a>
+                                    <a class="" href="document-reminders.html">Document Reminders</a>
                                 </li>
                                 <li>
                                     <a class="" href="access-control.html">Access Control</a>
@@ -314,6 +314,7 @@
                 </div>
             </div>
         </aside>
+
         <div class="contents">
 
             <div class="container-fluid">
@@ -324,11 +325,11 @@
                             <div class="breadcrumb-main add-contact justify-content-sm-between ">
                                 <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
                                     <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
-                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Document Reminders</h4>
+                                        <!-- <h4 class="text-capitalize fw-500 breadcrumb-title">Uniform & Equipment Tracking</h4> -->
                                         <span class="sub-title ml-sm-25 pl-sm-25"></span>
                                     </div>
 
-                                
+                                   
 
                                 </div>
                             
@@ -341,125 +342,203 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-list-wrap mb-25">
-                            <div class="table-responsive">
-                                <table class="table mb-0 table-borderless table-rounded">
-                                    <thead>
-                                        <tr>
-                                            <th>Employee</th>
-                                            <th>Document</th>
-                                            <th>Expiry Date</th>
-                                            <th>Status</th>
-                                            <th>Reminder</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>John Doe</td>
-                                            <td>Passport</td>
-                                            <td>2025-04-10</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">Active</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-info color-info rounded-pill userDatatable-content-status">Reminder Sent</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td>Willam Crooks</td>
-                                            <td>Passport</td>
-                                            <td>2025-03-10</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Reminder Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td>Alice Johnson</td>
-                                            <td>Visa</td>
-                                            <td>2025-02-20</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-danger color-danger rounded-pill userDatatable-content-status">Expired</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-danger color-danger rounded-pill userDatatable-content-status">Reminder Sent</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td>Michael Smith</td>
-                                            <td>Contract</td>
-                                            <td>2025-05-15</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-success color-success rounded-pill userDatatable-content-status">Active</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-info color-info rounded-pill userDatatable-content-status">Reminder Sent</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
-                                
-                                        <tr>
-                                            <td>Sophia Williams</td>
-                                            <td>Equipment</td>
-                                            <td>2025-06-30</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-warning color-warning rounded-pill userDatatable-content-status">Reminder Pending</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="text-danger">Mark as read</a>
-                                            </td>
-                                        </tr>
-                                
-                                    </tbody>
-                                </table>
-                                
+                            <div class="contact-list bg-white radius-xl w-100">
+                              
+                        
+                               
+                                <div class="row mb-4">
+                                    <div class="col text-center">
+                                        <h2 class="section-title">Advanced Security & Data Protection</h2>
+                                        <p class="text-muted">Manage your security settings and monitor system activities</p>
+                                    </div>
+                                </div>
+                        
+                                <!-- Security Features Section -->
+                                <div class="row g-4">
+                        
+                                    <!-- End-to-End Encryption -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card shadow-sm p-4 h-100">
+                                            <h5 class="fw-bold mb-3">End-to-End Encryption</h5>
+                                            <p class="text-muted">All data & communications are protected by AES-256 encryption.</p>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="encryptionToggle" checked>
+                                                <label class="form-check-label" for="encryptionToggle">Encryption Enabled</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Two-Factor Authentication -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card shadow-sm p-4 h-100">
+                                            <h5 class="fw-bold mb-3">Two-Factor Authentication (2FA)</h5>
+                                            <p class="text-muted">Add an extra layer of security to your account with 2FA.</p>
+                                            <button class="btn btn-primary w-100" data-toggle="modal" data-target="#twoFAModal">
+                                                Manage 2FA Settings
+                                            </button>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Biometric Login -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card shadow-sm p-4 h-100">
+                                            <h5 class="fw-bold mb-3">Biometric Login Options</h5>
+                                            <p class="text-muted">Enable fingerprint or facial recognition for secure logins.</p>
+                                            <button class="btn btn-outline-primary w-100" data-toggle="modal" data-target="#biometricModal">
+                                                Setup Biometric Login
+                                            </button>
+                                        </div>
+                                    </div>
+                        
+                                    <!-- Auto Logout -->
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="card shadow-sm p-4 h-100">
+                                            <h5 class="fw-bold mb-3">Auto-Logout</h5>
+                                            <p class="text-muted">Automatically log out inactive sessions to prevent unauthorized access.</p>
+                                            <label for="autoLogoutTime" class="form-label">Auto Logout After (minutes):</label>
+                                            <input type="number" id="autoLogoutTime" class="form-control mb-3" value="15" min="1">
+                                            <button class="btn btn-success w-100" onclick="alert('Auto-logout time saved!')">Save Settings</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Audit Logs Section -->
+                                <div class="row mt-5">
+                                    <div class="col">
+                                        <div class="card shadow-sm p-4">
+                                            <h5 class="fw-bold mb-3">Audit Logs & Compliance Reports</h5>
+                                            <p class="text-muted">Track and review every security-critical action performed in the system.</p>
+                        
+                                            <!-- Table of Logs -->
+                                            <div class="table-responsive">
+                                                <table class="table table-striped audit-log-table">
+                                                    <thead class="">
+                                                        <tr>
+                                                            <th>Date & Time</th>
+                                                            <th>User</th>
+                                                            <th>Action</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2025-03-22 10:15</td>
+                                                            <td>Admin #001</td>
+                                                            <td>Enabled 2FA</td>
+                                                            <td><span class="emp-status bg-opacity-success color-success rounded-pill userDatatable-content-status">
+                                                                Success
+                                                              </span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2025-03-21 14:05</td>
+                                                            <td>Employee #045</td>
+                                                            <td>Failed Login Attempt</td>
+                                                            <td><span class="emp-status bg-opacity-danger color-success rounded-pill userDatatable-content-status">
+                                                                Failed
+                                                              </span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2025-03-20 09:45</td>
+                                                            <td>Admin #002</td>
+                                                            <td>Updated Auto-Logout Time</td>
+                                                            <td><span class="emp-status bg-opacity-success color-success rounded-pill userDatatable-content-status">
+                                                                Success
+                                                              </span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2025-03-19 16:30</td>
+                                                            <td>Employee #078</td>
+                                                            <td>Login with Biometric</td>
+                                                            <td><span class="emp-status bg-opacity-success color-success rounded-pill userDatatable-content-status">
+                                                                Success
+                                                              </span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                        
+                                            <div class="text-end mt-3">
+                                                <button class="btn btn-success" onclick="alert('Generating compliance report...')">
+                                                    Generate Compliance Report
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- 2FA Modal -->
+                            <div class="modal fade" id="twoFAModal" tabindex="-1" aria-labelledby="twoFAModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content radius-xl">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="twoFAModalLabel">Manage Two-Factor Authentication</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                        
+                                        <div class="modal-body">
+                                            <p class="text-muted">Secure your account by enabling Two-Factor Authentication.</p>
+                        
+                                            <div class="mb-3">
+                                                <label for="phoneNumber" class="form-label">Phone Number (for OTP):</label>
+                                                <input type="text" class="form-control" id="phoneNumber" placeholder="+1234567890">
+                                            </div>
+                        
+                                            <div class="mb-3">
+                                                <label for="authApp" class="form-label">Authenticator App Code:</label>
+                                                <input type="text" class="form-control" id="authApp" placeholder="Enter code">
+                                            </div>
+                        
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary  w-100 mb-2" onclick="alert('2FA Enabled!')">Enable 2FA</button>
+                                                <button class="btn btn-outline-danger mt-2  w-100 mb-2" onclick="alert('2FA Disabled!')">Disable 2FA</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Biometric Modal -->
+                            <div class="modal fade" id="biometricModal" tabindex="-1" aria-labelledby="biometricModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content radius-xl">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="biometricModalLabel">Setup Biometric Login</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                        
+                                        <div class="modal-body">
+                                            <p class="text-muted">Enable biometric authentication for faster and more secure login.</p>
+                        
+                                            <div class="d-grid gap-2">
+                                                <button class="btn btn-primary  w-100 mb-2" onclick="alert('Fingerprint Setup Started!')">
+                                                    Setup Fingerprint
+                                                </button>
+                                                <button class="btn btn-primary  w-100 mb-2" onclick="alert('Facial Recognition Setup Started!')">
+                                                    Setup Facial Recognition
+                                                </button>
+                                                <button class="btn btn-outline-danger  w-100 mb-2 mt-2" onclick="alert('Biometric Login Disabled!')">
+                                                    Disable Biometric Login
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
                             </div>
                         </div>
                         
-
-                      
-                      
-                        
-                        
+                     
                         
                     </div>
                     <!-- ends: col-12 -->
@@ -490,7 +569,6 @@
     <script src="js/plugins.min.js"></script>
     <script src="js/script.min.js"></script>
     <!-- endinject-->
- 
 </body>
 
 

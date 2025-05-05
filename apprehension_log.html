@@ -12,7 +12,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <!-- inject:css-->
+<style>
+    .complaint_container{
+        background-color: #fff;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .logo img {
+      max-height: 80px;
+    }
+
+    .info {
+      margin-top: 30px;
+      display: flex;
+      gap: 30px;
+    }
+
+    .info-box {
+      background-color: #ccc;
+      padding: 10px;
+      font-weight: bold;
+      width: 80px;
+      color: #000;
+      text-align: center;
+    }
+
+    .info-field {
+      background-color: #f5f7ff;
+      padding: 10px;
+      width: 200px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 2px solid #000;
+      padding: 4px 6px;
+      text-align: center;
+      color: #000;
+      background-color: #f0f3ff;
+    }
+
+    th {
+      background-color: #d6d6d6;
+      color: #000;
+    }
+
+    tfoot td {
+      font-weight: bold;
+      background-color: #f0f3ff;
+    }
+    input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+</style>
     <link rel="stylesheet" href="css/plugin.min.css">
 
     <link rel="stylesheet" href="css/style.css">
@@ -101,7 +175,6 @@
                               </li>
                             </ul>
                           </li>
-                  
                         <!-- 4. Training -->
                         <li>
                           <a href="online-booking.html">Appointment Booking</a>
@@ -218,8 +291,8 @@
                             
                         </li>
 
-                        <li class="has-child open ">
-                            <a href="#" class="active">
+                        <li class="has-child ">
+                            <a href="#">
                                 <span data-feather="user" class="nav-icon"></span>
                                 <span class="menu-text">Personnel Management</span>
                                 <span class="toggle-icon"></span>
@@ -238,21 +311,21 @@
                                     <a class="" href="document-reminders.html">Document Reminders</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="access-control.html">Access Control</a>
+                                    <a class="" href="access-control.html">Access Control</a>
                                 </li>
                                 
                               
                             </ul>
                         </li>
-                        <li class="has-child ">
-                            <a href="#">
+                        <li class="has-child open">
+                            <a href="#" class="active">
                                 <span data-feather="clipboard" class="nav-icon"></span>
                                 <span class="menu-text">Reporting & Protocols</span>
                                 <span class="toggle-icon"></span>
                             </a>
                             <ul style="top: 128px; left: 214px;">
                                 <li>
-                                    <a class="" href="security-reports.html">Security Reports</a>
+                                    <a class="active" href="security-reports.html">Security Reports</a>
                                 </li>
                                 <li>
                                     <a class="" href="auto-correction.html">Suggestion & Correction</a>
@@ -320,119 +393,83 @@
                 </div>
             </div>
         </aside>
+
         <div class="contents">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-breadcrumb">
-
-                            <div class="breadcrumb-main add-contact justify-content-sm-between ">
-                                <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
-                                    <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
-                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Access Control</h4>
-                                        <span class="sub-title ml-sm-25 pl-sm-25"></span>
-                                    </div>
-
-                                
-
-                                </div>
-                            
-                            </div>
-
-                        </div>
-                    </div>
+            <form id="complaintForm">
+              <div class="container complaint_container">
+                <div class="header">
+                  <div class="title">Aufgriffsprotokoll</div>
+                  <div class="logo">
+                    <img src="img/ags_security.png" alt="AGS Security Logo">
+                  </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-list-wrap mb-25">
-                            <div class="table-responsive">
-                                <table class="table mb-0 table-borderless table-rounded">
-                                    <thead>
-                                        <tr>
-                                            <th>User</th>
-                                            <th>Role</th>
-                                            <th>Accessible Modules</th>
-                                            <th>Last Access</th>
-                                           
-                                            <th>Access Status</th>
-                                            <th>Action</th>
-                                        
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <select class="form-control role-select" onchange="changeRole(this)">
-                                                    <option value="Manager" selected>Manager</option>
-                                                    <option value="Staff">Staff</option>
-                                                    <option value="Admin">Admin</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled mb-0">
-                                                    <li><input type="checkbox" checked disabled> Dashboard</li>
-                                                    <li><input type="checkbox" checked> Reports</li>
-                                                    <li><input type="checkbox"> Finance</li>
-                                                    <li><input type="checkbox"> User Management</li>
-                                                </ul>
-                                            </td>
-                                            <td>2025-03-05 14:30</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">granted</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-danger btn-xs btn-squared" onclick="toggleAccess(this)">Revoked</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>William Crooks</td>
-                                            <td>
-                                                <select class="form-control role-select" onchange="changeRole(this)">
-                                                    <option value="Manager">Manager</option>
-                                                    <option value="Staff" selected>Staff</option>
-                                                    <option value="Admin">Admin</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled mb-0">
-                                                    <li><input type="checkbox" checked disabled> Dashboard</li>
-                                                    <li><input type="checkbox" checked> Reports</li>
-                                                    <li><input type="checkbox"> Finance</li>
-                                                    <li><input type="checkbox"> User Management</li>
-                                                </ul>
-                                            </td>
-                                            <td>2025-02-28 10:15</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-danger color-danger rounded-pill userDatatable-content-status active">revoked</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-success btn-xs btn-squared" onclick="toggleAccess(this)">Granted</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-
-                      
-                      
-                        
-                        
-                        
-                    </div>
-                    <!-- ends: col-12 -->
+          
+                <div class="info">
+                  <div class="d-flex">
+                    <div class="info-box">Monat</div>
+                    <div class="info-field"><input type="date"></div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="info-box">Objekt</div>
+                    <div class="info-field">&nbsp;</div>
+                  </div>
                 </div>
-            </div>
-
-        </div>
+          
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Lfd.</th>
+                      <th>Name</th>
+                      <th>Vorname</th>
+                      <th>Delikt</th>
+                      <th>Datum</th>
+                      <th>Uhrzeit</th>
+                      <th>Menge</th>
+                      <th>Einzelpreis</th>
+                      <th>Warenwert</th>
+                      <th>Warengruppe</th>
+                      <th>Detektiv</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- 20 manually written rows with 11 inputs each -->
+                    <!-- START ROWS -->
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                    <!-- END ROWS -->
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="6"></td>
+                      <td>Menge</td>
+                      <td colspan="2">Summe</td>
+                      <td colspan="2"></td>
+                    </tr>
+                  </tfoot>
+                </table>
+          
+              </div>
+            </form>
+          </div>
+          
        
     </main>
     <div id="overlayer">
@@ -457,34 +494,31 @@
     <script src="js/script.min.js"></script>
     <!-- endinject-->
     <script>
-        function toggleAccess(button) {
-            let statusSpan = button.closest("tr").querySelector(".userDatatable-content-status");
-    
-            if (statusSpan.textContent.trim().toLowerCase() === "granted") {
-                statusSpan.textContent = "revoked";
-                statusSpan.classList.remove("bg-opacity-success", "color-success");
-                statusSpan.classList.add("bg-opacity-danger", "color-danger");
-    
-                button.textContent = "Granted";
-                button.classList.remove("btn-danger");
-                button.classList.add("btn-success");
-            } else {
-                statusSpan.textContent = "granted";
-                statusSpan.classList.remove("bg-opacity-danger", "color-danger");
-                statusSpan.classList.add("bg-opacity-success", "color-success");
-    
-                button.textContent = "Revoked";
-                button.classList.remove("btn-success");
-                button.classList.add("btn-danger");
+        function validateForm() {
+          const form = document.getElementById("complaintForm");
+          const inputs = form.querySelectorAll("input[type='text'], textarea");
+      
+          inputs.forEach(input => {
+            
+            input.classList.remove("input-error");
+      
+            
+            if (!input.value.trim()) {
+              input.classList.add("input-error");
             }
+          });
         }
-    
-        function changeRole(select) {
-            let selectedRole = select.value;
-            console.log("Role changed to:", selectedRole);
-          
+      
+        function resetForm() {
+          const form = document.getElementById("complaintForm");
+          const inputs = form.querySelectorAll("input[type='text'], textarea");
+      
+          inputs.forEach(input => {
+            input.value = "";
+            input.classList.remove("input-error");
+          });
         }
-    </script>
+      </script>
     
 </body>
 

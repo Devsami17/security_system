@@ -12,7 +12,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
     <!-- inject:css-->
+<style>
+    .container {
+      background: #fff;
+      width: 900px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
 
+    .logo {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 300px;
+      height: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 16px !important;
+      font-weight: 800 !important;
+      margin: 10px 0 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 2px solid #000;
+      padding: 5px;
+      vertical-align: top;
+      color: #000;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      background: #eee9f6; /* light purple-gray */
+      border: none;
+      padding: 4px;
+      font-size: 13px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .bold {
+      font-weight: bold;
+      background: #d9d9d9;
+    }
+
+    .signature-row td {
+      border: none;
+      text-align: center;
+      
+    }
+
+    .footer-text {
+      color: red;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      text-align: start;
+    }
+
+    .buttons button {
+      padding: 6px 12px;
+      margin: 0 5px;
+      font-size: 13px;
+      background-color: rgb(204, 204, 204);
+      font-weight: 700;
+      border: none;
+      height: 40px;
+      width: 200px;
+      cursor: pointer;
+    }
+    .signature-input {
+  background: #eee9f6;
+  width: 100%;
+  padding: 4px;
+  border: none !important;
+  height: 40px;
+  font-size: 13px;
+  box-sizing: border-box;
+ 
+}
+.complaint_container{
+    margin-top: 20px;
+}
+.signature-table td {
+border: none;
+}
+.signature-row{
+    border-top: 3px solid #000;
+}
+
+.euro-sign{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.Warenwert-input{
+    width: 95% !important;
+}
+
+.input-error {
+    border: 1px solid red !important;
+  }
+</style>
     <link rel="stylesheet" href="css/plugin.min.css">
 
     <link rel="stylesheet" href="css/style.css">
@@ -218,8 +342,8 @@
                             
                         </li>
 
-                        <li class="has-child open ">
-                            <a href="#" class="active">
+                        <li class="has-child ">
+                            <a href="#">
                                 <span data-feather="user" class="nav-icon"></span>
                                 <span class="menu-text">Personnel Management</span>
                                 <span class="toggle-icon"></span>
@@ -238,21 +362,21 @@
                                     <a class="" href="document-reminders.html">Document Reminders</a>
                                 </li>
                                 <li>
-                                    <a class="active" href="access-control.html">Access Control</a>
+                                    <a class="" href="access-control.html">Access Control</a>
                                 </li>
                                 
                               
                             </ul>
                         </li>
-                        <li class="has-child ">
-                            <a href="#">
+                        <li class="has-child open">
+                            <a href="#" class="active">
                                 <span data-feather="clipboard" class="nav-icon"></span>
                                 <span class="menu-text">Reporting & Protocols</span>
                                 <span class="toggle-icon"></span>
                             </a>
                             <ul style="top: 128px; left: 214px;">
                                 <li>
-                                    <a class="" href="security-reports.html">Security Reports</a>
+                                    <a class="active" href="security-reports.html">Security Reports</a>
                                 </li>
                                 <li>
                                     <a class="" href="auto-correction.html">Suggestion & Correction</a>
@@ -320,118 +444,193 @@
                 </div>
             </div>
         </aside>
+
         <div class="contents">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-breadcrumb">
-
-                            <div class="breadcrumb-main add-contact justify-content-sm-between ">
-                                <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
-                                    <div class="d-flex align-items-center add-contact__title justify-content-center mr-sm-25">
-                                        <h4 class="text-capitalize fw-500 breadcrumb-title">Access Control</h4>
-                                        <span class="sub-title ml-sm-25 pl-sm-25"></span>
-                                    </div>
-
-                                
-
-                                </div>
-                            
-                            </div>
-
-                        </div>
-                    </div>
+            <form id="complaintForm">
+            <div class="container complaint_container">
+                <div class="logo">
+                  <img src="img/media_markt-logos.png" alt="MediaMarkt Logo">
                 </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="contact-list-wrap mb-25">
-                            <div class="table-responsive">
-                                <table class="table mb-0 table-borderless table-rounded">
-                                    <thead>
-                                        <tr>
-                                            <th>User</th>
-                                            <th>Role</th>
-                                            <th>Accessible Modules</th>
-                                            <th>Last Access</th>
-                                           
-                                            <th>Access Status</th>
-                                            <th>Action</th>
-                                        
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>John Doe</td>
-                                            <td>
-                                                <select class="form-control role-select" onchange="changeRole(this)">
-                                                    <option value="Manager" selected>Manager</option>
-                                                    <option value="Staff">Staff</option>
-                                                    <option value="Admin">Admin</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled mb-0">
-                                                    <li><input type="checkbox" checked disabled> Dashboard</li>
-                                                    <li><input type="checkbox" checked> Reports</li>
-                                                    <li><input type="checkbox"> Finance</li>
-                                                    <li><input type="checkbox"> User Management</li>
-                                                </ul>
-                                            </td>
-                                            <td>2025-03-05 14:30</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">granted</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-danger btn-xs btn-squared" onclick="toggleAccess(this)">Revoked</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>William Crooks</td>
-                                            <td>
-                                                <select class="form-control role-select" onchange="changeRole(this)">
-                                                    <option value="Manager">Manager</option>
-                                                    <option value="Staff" selected>Staff</option>
-                                                    <option value="Admin">Admin</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <ul class="list-unstyled mb-0">
-                                                    <li><input type="checkbox" checked disabled> Dashboard</li>
-                                                    <li><input type="checkbox" checked> Reports</li>
-                                                    <li><input type="checkbox"> Finance</li>
-                                                    <li><input type="checkbox"> User Management</li>
-                                                </ul>
-                                            </td>
-                                            <td>2025-02-28 10:15</td>
-                                            <td>
-                                                <div class="userDatatable-content d-inline-block">
-                                                    <span class="bg-opacity-danger color-danger rounded-pill userDatatable-content-status active">revoked</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-success btn-xs btn-squared" onclick="toggleAccess(this)">Granted</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-
-                      
-                      
-                        
-                        
-                        
-                    </div>
-                    <!-- ends: col-12 -->
+                <h2>Strafantrag wegen</h2>
+            
+                <table>
+                  <tr>
+                    <td class="bold" colspan="2">An die Polizeidienststelle</td>
+                    <td class="bold" colspan="2">Personalien des Beschuldigten</td>
+                  </tr>
+                  <tr>
+                    <td>Straße:</td><td><input type="text"></td>
+                    <td>Name:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>PLZ, Ort:</td><td><input type="text"></td>
+                    <td>Vorname:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Tel.:</td><td><input type="text"></td>
+                    <td>Geburtsdatum:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="bold" colspan="4">Absender/Stempel</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" style="text-decoration: none;font-weight: 400;text-align: center;">Media Markt TV-HiFi_Elektro GmbH</td>
+                  </tr>
+                  <tr>
+                    <td>Straße:</td><td><input type="text"></td>
+                    <td>Staatsangehörigkeit:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>PLZ, Ort:</td><td><input type="text"></td>
+                    <td>Ausweis Nummer:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Telefon:</td><td><input type="text"></td>
+                    <td>Ausgewiesen durch:</td><td><input type="text"></td>
+                  </tr>
+                </table>
+            
+                <table>
+                  <tr>
+                    <td class="bold" colspan="2">Personalien der Zeugen 1</td>
+                    <td class="bold" colspan="2">Personalien der Mittäter</td>
+                  </tr>
+                  <tr>
+                    <td>Name:</td><td><input type="text"></td>
+                    <td>Vorname:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Geburtsdatum:</td><td><input type="text"></td>
+                    <td>Geburtsdatum:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td class="bold" colspan="4">Personalien der Zeugen 2</td>
+                  </tr>
+                  <tr>
+                    <td>Name:</td><td><input type="text"></td>
+                    <td>Straße:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Vorname:</td><td><input type="text"></td>
+                    <td>PLZ, Ort:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td>Geburtsdatum:</td><td><input type="text"></td>
+                    <td>Staatsangehörigkeit:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td></td><td></td>
+                    <td>Ausweis Nummer:</td><td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td></td><td></td>
+                    <td>Ausgewiesen durch:</td><td><input type="text"></td>
+                  </tr>
+                </table>
+            
+                <table>
+                  <tr>
+                    <td class="bold" colspan="3">Folgende Ware bzw. Gegenstände hat der oben genannte Beschuldigte Wiederrechtlich entnommen.</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><strong>Artikel</strong></td>
+                    <td><strong>Warenwert</strong></td>
+                  </tr>
+                  <!-- Loop to generate 10 rows -->
+                 
+                  <tr>
+                    <td>1.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>5.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>6.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>7.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>8.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>9.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+                  <tr>
+                    <td>10.</td>
+                    <td><input type="text" placeholder=""></td>
+                    <td class="position-relative"><input type="text" class="Warenwert-input" placeholder=""><span class="euro-sign" >€</span> </td>
+                  </tr>
+               
+                </table>
+            
+                <table>
+                  <tr>
+                    <td class="bold">Sachverhaltsschilderung</td>
+                  </tr>
+                  <tr>
+                    <td><textarea></textarea></td>
+                  </tr>
+                </table>
+            
+            <table class="signature-table">
+              <tr>
+            <td><input type="text" class="signature-input"></td>
+            
+            <td><input type="text" class="signature-input"></td>
+            
+               <td><input type="text" class="signature-input"></td>
+            
+              </tr>
+              <tr class="signature-row">
+                <td>Unterschrift des Zeugen</td>
+                <td>Datum, Ort</td>
+                <td>Unterschrift Antragsteller</td>
+              </tr>
+            </table>
+            
+            
+                <div class="footer-text">
+                  Wir stellen Strafantrag aus allen rechtlichen Gründen.<br>
+                  Über den Ausgang des Strafverfahrens erbitten wir um Mitteilung
                 </div>
-            </div>
-
+            
+                <div class="buttons">
+                    <button onclick="window.print()">Drucken</button>
+                    <button type="button" onclick="validateForm()">Formular speichern</button>
+                    <button type="button" onclick="resetForm()">Formular zurücksetzen</button>
+                  </div>
+                  
+              </div>
+            </form>
         </div>
        
     </main>
@@ -457,34 +656,31 @@
     <script src="js/script.min.js"></script>
     <!-- endinject-->
     <script>
-        function toggleAccess(button) {
-            let statusSpan = button.closest("tr").querySelector(".userDatatable-content-status");
-    
-            if (statusSpan.textContent.trim().toLowerCase() === "granted") {
-                statusSpan.textContent = "revoked";
-                statusSpan.classList.remove("bg-opacity-success", "color-success");
-                statusSpan.classList.add("bg-opacity-danger", "color-danger");
-    
-                button.textContent = "Granted";
-                button.classList.remove("btn-danger");
-                button.classList.add("btn-success");
-            } else {
-                statusSpan.textContent = "granted";
-                statusSpan.classList.remove("bg-opacity-danger", "color-danger");
-                statusSpan.classList.add("bg-opacity-success", "color-success");
-    
-                button.textContent = "Revoked";
-                button.classList.remove("btn-success");
-                button.classList.add("btn-danger");
+        function validateForm() {
+          const form = document.getElementById("complaintForm");
+          const inputs = form.querySelectorAll("input[type='text'], textarea");
+      
+          inputs.forEach(input => {
+            
+            input.classList.remove("input-error");
+      
+            
+            if (!input.value.trim()) {
+              input.classList.add("input-error");
             }
+          });
         }
-    
-        function changeRole(select) {
-            let selectedRole = select.value;
-            console.log("Role changed to:", selectedRole);
-          
+      
+        function resetForm() {
+          const form = document.getElementById("complaintForm");
+          const inputs = form.querySelectorAll("input[type='text'], textarea");
+      
+          inputs.forEach(input => {
+            input.value = "";
+            input.classList.remove("input-error");
+          });
         }
-    </script>
+      </script>
     
 </body>
 
